@@ -1,5 +1,35 @@
 {% extends 'paasivu.html' %}
 {% block content %}
-Ilmoitus Taulu sivu.
-{{somevar}}
+<div class="ui input">
+  <input type="text" placeholder="Ilmoitus">
+</div>
+<div class="ui input">
+  <input type="text" placeholder="aika">
+</div>
+
+<button class="ui button">Follow</button>
+<div class="ui checkbox">
+  <input type="checkbox" name="example">
+  <label>Listaa ilmoitukset aika järjestyksessä</label>
+</div>
+<table class="ui celled table">
+  <thead>
+    <tr><th>Tehtävä</th>
+    <th>aika</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td data-label="Name">James</td>
+      <td data-label="Age">24</td>
+    </tr>
+    <tr>
+      <td data-label="Name">Jill</td>
+      <td data-label="Age">26</td>
+    </tr>
+    <tr>
+      <td data-label="Name">Elyse</td>
+      <td data-label="Age">24</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock  %}
